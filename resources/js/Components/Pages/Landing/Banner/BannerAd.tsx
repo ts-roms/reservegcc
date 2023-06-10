@@ -1,13 +1,13 @@
 import { FunctionComponent } from 'react';
-import MobileApp from '../../Headers/MobileApp';
-import Image from '../../Media/Image';
 import BannerImage from '../../../Assets/Landing/homepage-banner.png'
+import MobileApp from '@/Components/Headers/MobileApp';
+import Image from '@/Components/Media/Image';
 
-interface BannerProps {
+interface BannerAd {
 
 }
 
-const Banner: FunctionComponent<BannerProps> = () => {
+const BannerAd: FunctionComponent<BannerAd> = () => {
   return (
     <>
       <div id="banner" className="flex pt-10">
@@ -26,4 +26,4 @@ const Banner: FunctionComponent<BannerProps> = () => {
   );
 }
 
-export default Banner;
+export default BannerAd;

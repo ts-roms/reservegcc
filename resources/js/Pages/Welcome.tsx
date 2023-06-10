@@ -5,7 +5,7 @@ import HowItWorks from '@/Components/Pages/Landing/HowItWorks';
 import Platform from '@/Components/Pages/Landing/Platform';
 import MobileAd from '@/Components/Pages/Landing/MobileAd';
 import Footer from '@/Components/Pages/Landing/Footer';
-import BannerContainer from '@/Components/Pages/Landing/BannerContainer';
+import Banner from '@/Components/Pages/Landing/Banner';
 
 export default function Welcome({ auth }: PageProps<{ laravelVersion: string, phpVersion: string }>) {
   return (
@@ -14,7 +14,7 @@ export default function Welcome({ auth }: PageProps<{ laravelVersion: string, ph
       <Nav auth={auth} id="banner" />
       <main>
         <div className="">
-          <BannerContainer />
+          <Banner />
           <div id="how-it-works" className="bg-[#F6E9DF]">
             <div className="max-w-[92rem] mx-auto px-4 sm:px-6 lx:px-8">
               <HowItWorks />
