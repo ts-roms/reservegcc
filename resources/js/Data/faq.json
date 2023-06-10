@@ -1,0 +1,27 @@
+[
+  {
+    "value": "faq-1",
+    "trigger": "How can you guarantee the quality of my order?",
+    "content": "We simply guarantee that any detail mention at the time of order will be fulfilled. If it was not, we will take action to resolve the issue."
+  },
+  {
+    "value": "faq-2",
+    "trigger": "Can I cancel my order?",
+    "content": "An order can be cancelled while it is still in pending status. Once an order is accepted you need to contact our customer service to investigate each case."
+  },
+  {
+    "value": "faq-3",
+    "trigger": "What payment methods you accept?",
+    "content": "We accept various methods including credit cards, local debit cards, Apple pay, Google pay and soon cash."
+  },
+  {
+    "value": "faq-4",
+    "trigger": "Why my order is not accepted immediately?",
+    "content": "When you place an order, it undergo multiple stages to be completed. Order acceptance period vary depending on how big the order is. If your order is not accepted nor declined within 24 hours of placing the order, please reach out to us."
+  },
+  {
+    "value": "faq-5",
+    "trigger": "Where can I talk to customer service?",
+    "content": "We take customer satisfaction very seriously, please reach out to your Vbutler and they will take care of you. If you don’t have one yet send us an email at contactus@reservegcc.com."
+  }
+]

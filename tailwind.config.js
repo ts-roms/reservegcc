@@ -22,6 +22,10 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    listStyleType: {
+      square: 'square',
+      decimal: 'decimal'
+    },
     extend: {
       fontFamily: {
         sans: ['Figtree', ...defaultTheme.fontFamily.sans],

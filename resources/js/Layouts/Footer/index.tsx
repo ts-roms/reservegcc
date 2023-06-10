@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import AppLogoWhite from '../../../Assets/Landing/logo.png';
+import AppLogoWhite from '../../Assets/Landing/logo.png';
 import Image from "@/Components/Media/Image";
 import { Link } from "@inertiajs/react";
 
@@ -19,10 +19,10 @@ const Footer: FunctionComponent<FooterProps> = () => {
             </div>
             {/* Links */}
             <div className="my-auto gap-3 flex">
-              <Link href="#" className="text-2xl font-thin hover:font-bold">Terms and Conditions</Link>
-              <Link href="#" className="text-2xl font-thin hover:font-bold">Privacy Policy</Link>
-              <Link href="#" className="text-2xl font-thin hover:font-bold">FAQs</Link>
-              <Link href="#" className="text-2xl font-thin hover:font-bold">Help</Link>
+              <Link href={route('terms-and-conditions')} className="text-2xl font-thin hover:font-bold">Terms and Conditions</Link>
+              <Link href={route('privacy')} className="text-2xl font-thin hover:font-bold">Privacy Policy</Link>
+              <Link href={route('faq')} className="text-2xl font-thin hover:font-bold">FAQs</Link>
+              <Link href={route('help')} className="text-2xl font-thin hover:font-bold">Help</Link>
             </div>
           </div>
         </div>

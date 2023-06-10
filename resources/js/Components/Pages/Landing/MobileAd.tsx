@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
 import MobileImage from '../../../Assets/Landing/mobile-image.png';
 import Image from '@/Components/Media/Image';
-import MobileApp from '@/Components/Headers/MobileApp';
+import MobileApp from '@/Layouts/Headers/MobileApp';
 
 interface MobileAdProps {
 

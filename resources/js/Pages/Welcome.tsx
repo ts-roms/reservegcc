@@ -1,18 +1,16 @@
 import { Head } from '@inertiajs/react';
 import { PageProps } from '@/types';
-import Nav from '@/Components/Headers/Nav';
 import HowItWorks from '@/Components/Pages/Landing/HowItWorks';
 import Platform from '@/Components/Pages/Landing/Platform';
 import MobileAd from '@/Components/Pages/Landing/MobileAd';
-import Footer from '@/Components/Pages/Landing/Footer';
 import Banner from '@/Components/Pages/Landing/Banner';
+import UnAuthenticatedLayout from '@/Layouts/UnAuthenticatedLayout';
 
-export default function Welcome({ auth }: PageProps<{ laravelVersion: string, phpVersion: string }>) {
+export default function Welcome({ auth }: PageProps) {
   return (
     <>
-      <Head title="Welcome" />
-      <Nav auth={auth} id="banner" />
-      <main>
+      <UnAuthenticatedLayout auth={auth}>
+        <Head title="Welcome" />
         <div className="">
           <Banner />
           <div id="how-it-works" className="bg-[#F6E9DF]">
@@ -31,8 +29,7 @@ export default function Welcome({ auth }: PageProps<{ laravelVersion: string, ph
             </div>
           </div>
         </div>
-      </main>
-      <Footer />
+      </UnAuthenticatedLayout>
     </>
   );
 }

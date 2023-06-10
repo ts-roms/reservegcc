@@ -29,6 +29,22 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/help', function () {
+    return Inertia::render('Help');
+})->name('help');
+
+Route::get('/faq', function () {
+    return Inertia::render('FAQ');
+})->name('faq');
+
+Route::get('/privacy', function () {
+    return Inertia::render('PrivacyPolicy');
+})->name('privacy');
+
+Route::get('/terms-and-conditions', function () {
+    return Inertia::render('TermsAndConditions');
+})->name('terms-and-conditions');
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
