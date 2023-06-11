@@ -25,9 +25,24 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+Route::get('/admin/dashboard', function () {
+    return Inertia::render('Admin/Dashboard/index');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/admin/services', function () {
+    return Inertia::render('Admin/Services/index');
+})->middleware(['auth', 'verified'])->name('services');
+
+Route::get('/admin/orders', function () {
+    return Inertia::render('Admin/Orders/index');
+})->middleware(['auth', 'verified'])->name('orders');
+
+Route::get('/admin/schedules', function () {
+    return Inertia::render('Admin/Scheduler/index');
+})->middleware(['auth', 'verified'])->name('schedules');
+
+
+
 
 Route::get('/help', function () {
     return Inertia::render('HelpPage');
