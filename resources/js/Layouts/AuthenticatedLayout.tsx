@@ -6,12 +6,12 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 import { Link } from '@inertiajs/react';
 import { User } from '@/types';
 
-export default function Authenticated({ user, children }: PropsWithChildren<{ user: User}>) {
+export default function Authenticated({ user, children }: PropsWithChildren<{ user: User }>) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false);
 
     return (
         <div className="min-h-screen bg-gray-100">
-            <nav className="bg-white border-b border-gray-100">
+            <nav className="bg-white border-b border-gray-100 sticky top-0">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between h-16">
                         <div className="flex">
@@ -25,6 +25,11 @@ export default function Authenticated({ user, children }: PropsWithChildren<{ us
                                 <NavLink href={route('dashboard')} active={route().current('dashboard')}>
                                     Dashboard
                                 </NavLink>
+                                <NavLink href={route('services')} active={route().current('services')}>
+                                    Services
+                                </NavLink>
+
+
                             </div>
                         </div>
 
@@ -116,7 +121,16 @@ export default function Authenticated({ user, children }: PropsWithChildren<{ us
                 </div>
             </nav>
 
-            <main>{children}</main>
+            <main className='min-h-[794px]'>{children}</main>
+            <footer className='mt-10'>
+                <div className='h-[80px] bg-[#1B1B1C] text-white'>
+                    <div className="flex justify-center h-full">
+                        <div className="my-auto">
+                            <p>Reservegcc 2022 &copy; All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     );
 }

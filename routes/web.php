@@ -26,19 +26,19 @@ Route::get('/', function () {
 });
 
 Route::get('/admin/dashboard', function () {
-    return Inertia::render('Admin/Dashboard/index');
+    return Inertia::render('Admin/Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/admin/services', function () {
-    return Inertia::render('Admin/Services/index');
+    return Inertia::render('Admin/Services');
 })->middleware(['auth', 'verified'])->name('services');
 
 Route::get('/admin/orders', function () {
-    return Inertia::render('Admin/Orders/index');
+    return Inertia::render('Admin/Orders');
 })->middleware(['auth', 'verified'])->name('orders');
 
 Route::get('/admin/schedules', function () {
-    return Inertia::render('Admin/Scheduler/index');
+    return Inertia::render('Admin/Schedules');
 })->middleware(['auth', 'verified'])->name('schedules');
 
 
