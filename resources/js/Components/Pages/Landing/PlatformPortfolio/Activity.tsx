@@ -29,8 +29,8 @@ const Activity: FunctionComponent<ActivityProps> = () => {
           <Image src={ActivityImage} alt={'activity-image'} className={cn('w-full scale-[1.2]')} />
         </div>
 
-        <Card className='w-1/3 border-none !shadow-none'>
-          <Image src={ActivityBg} alt="activity-bg" className="scale-[1.2] absolute -mt-28 right-0 opacity-40" />
+        <Card className='w-1/3 border-none !shadow-none overflow-hidden'>
+          <Image src={ActivityBg} alt="activity-bg" className="absolute -mt-28 right-0 opacity-40" />
         </Card>
       </div>
     </>

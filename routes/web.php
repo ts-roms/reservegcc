@@ -30,19 +30,19 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/help', function () {
-    return Inertia::render('Help');
+    return Inertia::render('HelpPage');
 })->name('help');
 
 Route::get('/faq', function () {
-    return Inertia::render('FAQ');
+    return Inertia::render('FAQPage');
 })->name('faq');
 
 Route::get('/privacy', function () {
-    return Inertia::render('PrivacyPolicy');
+    return Inertia::render('PrivacyPolicyPage');
 })->name('privacy');
 
 Route::get('/terms-and-conditions', function () {
-    return Inertia::render('TermsAndConditions');
+    return Inertia::render('TermsAndConditionsPage');
 })->name('terms-and-conditions');
 
 Route::middleware('auth')->group(function () {

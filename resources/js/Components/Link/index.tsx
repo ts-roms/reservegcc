@@ -5,7 +5,7 @@ interface LinkProps {
   href: string,
   children: ReactNode,
   className?: string,
-  target?: string
+  target?: string,
 }
 
 const Link: FunctionComponent<LinkProps> = ({ href, children, className, target, ...rest }) => {
